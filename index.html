@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Egito Antigo — Estudo Interativo</title>
+
+  <!-- Google Fonts (opcional) -->
+<link rel="stylesheet" href="static/css/styles.css">
+
+</head>
+<body>
+  <!-- Header (fixo, só brand + nav) -->
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">EG</div>
+        <div>
+          <div style="font-weight:800">Egito Antigo</div>
+          <div style="font-size:0.85rem; color:#6d5843">Estudo Interativo • História</div>
+        </div>
+      </div>
+
+      <nav aria-label="Navegação principal">
+        <a href="#introducao" data-target="home" class="nav-link">Início</a>
+        <a href="#sumario" data-target="home" class="nav-link">Sumário</a>
+        <a href="#conteudo" data-target="home" class="nav-link">Conteúdo</a>
+        <a href="#" id="to-quiz" data-target="quiz" class="nav-link">Quiz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <!-- ===== HOME (página 1) ===== -->
+    <div id="home" class="page active">
+      <!-- HERO com Introdução dentro -->
+      <section class="hero">
+        <div class="hero-main fade-in">
+          <div class="hero-txt">
+            <h1 class="titulo">Egito Antigo — Guia Essencial</h1>
+            <p class="titulo">
+              Explore o mundo às margens do <span class="highlight">Rio Nilo</span>,
+              conheça a sociedade, religião, arte e legado desta civilização milenar.
+            </p>
+
+            <!-- INTRODUÇÃO dentro do Hero -->
+            <article id="introducao" class="content-card fade-in" style="margin-top:14px">
+              <div class="section-title">
+                <div class="icon">I</div>
+                <h2>1. Introdução</h2>
+              </div>
+              <div>
+                <span class="dropcap">O</span>
+                <p>
+                  O <strong>Egito Antigo</strong> é uma das civilizações mais
+                  fascinantes da história, conhecida por sua grandiosidade, cultura rica e
+                  contribuições para o desenvolvimento humano.
+                </p>
+                <p>
+                  Neste material, vamos compreender como o Nilo influenciou sua
+                  formação, como a sociedade se organizava, quais eram suas crenças,
+                  os avanços culturais e científicos e, por fim, a herança deixada
+                  para o mundo.
+                </p>
+              </div>
+            </article>
+
+            <!-- Botões -->
+            <div style="margin-top:10px; display:flex; gap:10px; align-items:center">
+              <button class="btn" id="start-quiz-btn">Fazer Quiz</button>
+            </div>
+          </div>
+
+         
+      </section>
+
+      <!-- SUMÁRIO -->
+      <section id="sumario" class="toc-block fade-in" aria-labelledby="sumario-title">
+        <h2 id="sumario-title">Sumário</h2>
+        <ol>
+          <li><a href="#introducao" class="toc-link">Introdução</a></li>
+          <li><a href="#nilo" class="toc-link">O Rio Nilo e a Geografia</a></li>
+          <li><a href="#sociedade" class="toc-link">Sociedade e Organização Política</a></li>
+          <li><a href="#religiao" class="toc-link">Religião e Crenças</a></li>
+          <li><a href="#cultura" class="toc-link">Cultura, Economia e Conhecimentos</a></li>
+          <li><a href="#arte" class="toc-link">Arte, Arquitetura e Legado</a></li>
+          <li><a href="#" id="open-quiz-from-toc">Ir para Quiz</a></li>
+        </ol>
+      </section>
+
+      <!-- Âncora para link "Conteúdo" da nav -->
+      <div id="conteudo" class="content-anchor" aria-hidden="true"></div>
+
+      <!-- NILO -->
+      <article id="nilo" class="content-card fade-in">
+        <div class="section-title">
+          <div class="icon">N</div>
+          <h2>2. O Rio Nilo e a Geografia</h2>
+        </div>
+        <div>
+          <p>O Egito era chamado de “<span class="highlight">dádiva do Nilo</span>” porque toda a sua sobrevivência dependia do rio. Em uma região cercada por desertos, o Nilo fornecia água, fertilidade e comunicação entre diferentes áreas do território.</p>
+          <ul>
+            <li>As cheias anuais traziam nutrientes que deixavam o solo fértil, permitindo a agricultura.</li>
+            <li>O rio era utilizado como rota de transporte e comércio.</li>
+            <li>O deserto ao redor servia como proteção natural contra invasores.</li>
+          </ul>
+          <p>Graças a esses fatores, o Egito conseguiu se manter como uma civilização estável por muito tempo.</p>
+        </div>
+      </article>
+
+      <!-- SOCIEDADE -->
+      <article id="sociedade" class="content-card fade-in">
+        <div class="section-title">
+          <div class="icon">S</div>
+          <h2>3. Sociedade e Organização Política</h2>
+        </div>
+        <div>
+          <p>A sociedade egípcia era hierárquica, organizada em forma de pirâmide social.</p>
+          <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-top:10px;">
+            <div style="background:linear-gradient(180deg,#fff7e6, #fff1d8); padding:10px; border-radius:10px;">
+              <strong>Faraó</strong><div style="font-size:0.9rem">Governante absoluto, visto como um deus vivo.</div>
+            </div>
+            <div style="background:linear-gradient(180deg,#fff7e6, #fff1d8); padding:10px; border-radius:10px;">
+              <strong>Nobres e sacerdotes</strong><div style="font-size:0.9rem">Auxiliavam na administração e nos cultos religiosos.</div>
+            </div>
+            <div style="background:linear-gradient(180deg,#fff7e6, #fff1d8); padding:10px; border-radius:10px;">
+              <strong>Escribas</strong><div style="font-size:0.9rem">Responsáveis pela escrita, registros e contabilidade.</div>
+            </div>
+            <div style="background:linear-gradient(180deg,#fff7e6, #fff1d8); padding:10px; border-radius:10px;">
+              <strong>Trabalhadores</strong><div style="font-size:0.9rem">Soldados, artesãos e camponeses sustentavam a economia.</div>
+            </div>
+          </div>
+          <p style="margin-top:12px;">O poder político e religioso estavam concentrados na figura do faraó, que representava a ligação entre os homens e os deuses.</p>
+        </div>
+      </article>
+
+      <!-- RELIGIÃO -->
+      <article id="religiao" class="content-card fade-in">
+        <div class="section-title">
+          <div class="icon">R</div>
+          <h2>4. Religião e Crenças</h2>
+        </div>
+        <div>
+          <p>A religião era central na vida egípcia, influenciando todas as áreas da sociedade. Os egípcios eram politeístas e acreditavam em diversos deuses, muitos ligados à natureza.</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:10px;">
+            <div style="padding:10px; border-radius:10px; background:linear-gradient(180deg,#fff,#fff8e6); width:160px">
+              <strong>Rá</strong><div style="font-size:0.9rem">Deus do sol</div>
+            </div>
+            <div style="padding:10px; border-radius:10px; background:linear-gradient(180deg,#fff,#fff8e6); width:160px">
+              <strong>Osíris</strong><div style="font-size:0.9rem">Deus da vida após a morte</div>
+            </div>
+            <div style="padding:10px; border-radius:10px; background:linear-gradient(180deg,#fff,#fff8e6); width:160px">
+              <strong>Ísis</strong><div style="font-size:0.9rem">Deusa da fertilidade e maternidade</div>
+            </div>
+            <div style="padding:10px; border-radius:10px; background:linear-gradient(180deg,#fff,#fff8e6); width:160px">
+              <strong>Anúbis</strong><div style="font-size:0.9rem">Deus ligado à mumificação</div>
+            </div>
+          </div>
+
+          <p style="margin-top:12px;">Os egípcios acreditavam na vida após a morte e, por isso, realizavam a mumificação para preservar os corpos. Esse pensamento religioso motivou a construção de templos, tumbas e pirâmides, além de inspirar as artes funerárias.</p>
+        </div>
+      </article>
+
+      <!-- CULTURA -->
+      <article id="cultura" class="content-card fade-in">
+        <div class="section-title">
+          <div class="icon">C</div>
+          <h2>5. Cultura, Economia e Conhecimentos</h2>
+        </div>
+        <div>
+          <p>A cultura egípcia foi uma das mais avançadas do mundo antigo. Eles desenvolveram os <strong>hieróglifos</strong>, sistema de escrita usado em papiros e paredes de templos.</p>
+          <ul>
+            <li><strong>Matemática</strong> — usada em cálculos agrícolas e construções.</li>
+            <li><strong>Medicina</strong> — técnicas cirúrgicas e remédios naturais.</li>
+            <li><strong>Astronomia</strong> — organização do calendário agrícola.</li>
+          </ul>
+          <p>A economia era baseada na agricultura, complementada pelo comércio de tecidos, artesanatos e produtos agrícolas.</p>
+        </div>
+      </article>
+
+      <!-- ARTE -->
+      <article id="arte" class="content-card fade-in">
+        <div class="section-title">
+          <div class="icon">A</div>
+          <h2>6. Arte, Arquitetura e Legado</h2>
+        </div>
+        <div>
+          <p>As pirâmides de Gizé, os templos de Karnak e Luxor e as estátuas de faraós são demonstrações da habilidade técnica e do simbolismo religioso do Egito Antigo. A arquitetura e a arte tinham função religiosa e simbólica.</p>
+          <p>O legado do Egito inclui avanços em escrita, medicina, astronomia e matemática, além de uma arquitetura que influencia até hoje.</p>
+        </div>
+      </article>
+
+      <!-- Material adicional -->
+      <article id="material2" class="content-card fade-in">
+        <div class="section-title">
+          <div class="icon">II</div>
+          <h2>Resumo:</h2>
+        </div>
+        <div>
+          <p>O Egito Antigo se desenvolveu no nordeste da África e teve o Rio Nilo como base da vida. Além de água e fertilidade, o Nilo era principal rota de transporte. O deserto fornecia proteção natural.</p>
+          <p>Sociedade em pirâmide social; faraó no topo como governante e deus vivo; escribas com papel fundamental. A religião permeava vida, com deuses como Rá, Osíris, Ísis e Anúbis.</p>
+          <p>Escrita em hieróglifos, avanços notáveis em matemática, medicina e astronomia; economia agrícola com comércio. Arte e arquitetura: pirâmides, templos, pinturas e esculturas com forte valor simbólico.</p>
+
+          <div style="margin-top:12px">
+            <div class="accordion" id="accordion-demo">
+              <div class="acc-item">
+                <div class="acc-head" data-acc="1">
+                  <div>Por que o Nilo era tão importante?</div>
+                  <div class="chev">▾</div>
+                </div>
+                <div class="acc-body">As cheias fertilizavam o solo, permitindo produção de alimentos estável. Era também via de transporte e comunicação.</div>
+              </div>
+              <div class="acc-item">
+                <div class="acc-head" data-acc="2">
+                  <div>Quem eram os escribas?</div>
+                  <div class="chev">▾</div>
+                </div>
+                <div class="acc-body">Eram os especialistas da escrita e registros — essenciais para a administração do Estado.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- Botões finais -->
+      <div style="display:flex; gap:12px; margin-top:8px;">
+        <button class="btn" id="end-quiz-btn">Ir para o Quiz</button>
+      </div>
+    </div>
+    <!-- ===== /HOME ===== -->
+
+    <!-- ===== QUIZ PAGE (página 2) ===== -->
+    <div id="quiz-page" class="page" style="margin-top:18px;">
+      <div class="quiz-card" id="quiz-card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px">
+          <div style="font-weight:800">Quiz — Teste seus conhecimentos</div>
+          <div style="font-size:0.9rem; color:#5a4637">Perguntas: <span id="total-q">0</span></div>
+        </div>
+
+        <div class="progress" aria-hidden="true"><i id="progress-bar"></i></div>
+        <div id="question-area"><!-- Pergunta será injetada aqui --></div>
+
+        <div class="quiz-controls">
+          <div>
+            <button class="btn secondary" id="prev-btn" aria-label="Anterior">◀ Anterior</button>
+            <button class="btn secondary" id="next-btn" aria-label="Próxima">Próxima ▶</button>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <button class="btn secondary" id="reset-quiz">Limpar respostas</button>
+            <button class="btn" id="submit-quiz">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===== /QUIZ PAGE ===== -->
+  </main>
+
+  <!-- Modal resultado -->
+  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document">
+      <h3 id="modal-title">Sua nota</h3>
+      <p id="modal-message" style="font-size:1.05rem; margin:10px 0 18px"></p>
+      <div style="font-size:2.2rem; font-weight:900; color:var(--deep)" id="modal-score">0 / 0</div>
+      <div style="margin-top:18px; display:flex; gap:10px; justify-content:center">
+        <button class="btn" id="modal-back-home">Voltar à página principal</button>
+        <button class="btn secondary" id="modal-close">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="contact">
+        <div><strong>Contato</strong></div>
+        <div>Email: <a href="mailto: dentalclen@gmail.com">mailto: dentalclen@gmail.com</a></div>
+        <div>Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">@egito.antigo</a></div>
+      </div>
+      <div class="credits">
+        <div>desenvolvido por Enzo Gabriel © 2025</strong>.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/js/script.js"></script>
+</body>
+</html>
